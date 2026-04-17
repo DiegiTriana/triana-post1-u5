@@ -28,3 +28,5 @@ mvn clean spring-boot:run
 ## Verificacion
 - Consola H2: `http://localhost:8080/h2-console`
 - API base: `http://localhost:8080/api/libros`
+
+![console](image.png)
