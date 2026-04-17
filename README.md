@@ -30,3 +30,17 @@ mvn clean spring-boot:run
 - API base: `http://localhost:8080/api/libros`
 
 ![console](image.png)
+
+## Evidencias de Verificacion (2026-04-17 16:26:56)
+
+| Checkpoint | Estado | Evidencia |
+|---|---|---|
+| Compila sin errores (mvn compile) | PASS | mvn -q -DskipTests compile |
+| Aplicacion inicia en puerto de prueba | PASS | http://localhost:18501 |
+| GET /api/libros inicial retorna 200 | PASS | status=200 |
+| POST /api/libros retorna 201 con recurso creado | PASS | status=201, id=1 |
+| GET /api/libros/buscar retorna resultado esperado | PASS | status=200 |
+| DELETE /api/libros/{id} existente retorna 204 | PASS | status=204 |
+| DELETE /api/libros/{id} inexistente retorna 404 | PASS | status=404 |
+
+
